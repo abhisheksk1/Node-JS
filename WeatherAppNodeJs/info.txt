@@ -1,0 +1,11 @@
+1cef045f2ef0d0c6219f95d488de8dc9
+
+api.openweathermap.org/data/2.5/weather?q=Katihar&appid=1cef045f2ef0d0c6219f95d488de8dc9
+
+
+Name : Abhishek Kumar Pandey
+Class Roll : 1
+College Roll : 192600101
+Subject : Node.js Tutorial
+Year : 2nd
+Sem : 3rd Sem

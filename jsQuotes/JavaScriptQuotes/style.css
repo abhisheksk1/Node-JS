@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url("./Ball-1s-200px.gif") no-repeat center;
+    z-index: 99999;
+}
+
+body {
+    background-color: #34495E;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 50rem;
+    width: 900px;
+    height: 550px;
+    top: 50%;
+    background-color: skyblue;
+    margin-top: 5rem;
+    border-radius: 5px;
+    border: 2px solid skyblue;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.inner {
+    margin: 0 auto;
+    max-width: 30rem;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    border: 2px white;
+    border-radius: 2%;
+    text-align: center;
+    box-shadow: rgba(0.45, 0, 0, 0.45) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.box {
+    margin-top: 5rem;
+}
+
+.button {
+    background-color: skyblue;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    margin-top: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+#newQ {
+    text-align: center;
+    margin-top: 6px;
+    animation: bounceIn 2s;
+}
+
+.number {
+    display: flex;
+    flex: 1.5;
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+}
+
+.text {
+    margin-top: 3rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.start-quote {
+    width: 70px;
+    height: 70px;
+}
+
+#quotes {
+    font-size: 1.5rem;
+    font-family: 'Akaya Telivigala', cursive;
+    width: 90%;
+    text-align: center;
+}
+
+#author {
+    font-size: 1rem;
+    font-family: 'Anton', sans-serif;
+    margin-left: 15rem;
+    margin-top: 3rem;
+    color: grey;
+}
+
+.number:hover img {
+    animation: rot 1s linear;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#newQ:hover span {
+    animation: dilrot 1s linear;
+}
+
+@keyframes dilrot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 490px;
+    }
+    .inner {
+        width: 450px;
+    }
+}
